@@ -9,9 +9,15 @@ public class PersonnageTest {
         assertEquals("est",place,"doit retourner est");
     }
     @Test
-    public void doit_retourner_est_lorsquoi_fois_est_2(){
+    public void doit_retourner_sud_lorsquoi_fois_est_2(){
         Personnage p= new Personnage();
         String place = p.tourner(2);
-        assertEquals("sud",place,"doit retourner sud@");
+        assertEquals("sud",place,"doit retourner sud");
+    }
+    @Test
+    public void doit_retourner_ouest_lorsquoi_fois_est_3(){
+        Personnage p= new Personnage();
+        String place = p.tourner(3);
+        assertEquals("ouest",place,"doit retourner ouest");
     }
 }
