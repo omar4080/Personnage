@@ -8,4 +8,10 @@ public class PersonnageTest {
         String place = p.tourner(1);
         assertEquals("est",place,"doit retourner est");
     }
+    @Test
+    public void doit_retourner_est_lorsquoi_fois_est_2(){
+        Personnage p= new Personnage();
+        String place = p.tourner(2);
+        assertEquals("sud",place,"doit retourner sud@");
+    }
 }
