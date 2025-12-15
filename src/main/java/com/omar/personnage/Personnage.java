@@ -1,14 +1,19 @@
 package com.omar.personnage;
 
 public class Personnage {
-    String orientation="nord";
+    String orientation;
+    Personnage(){
+        this.orientation = "nord";
+    }
     public String tourner(int fois){
-        if(fois==1){
-            orientation="est";
-        }else if(fois==2){
-            orientation="sud";
-        } else if (fois==3) {
-            orientation="ouest";
+        if(fois % 4 == 0){
+            orientation = "nord";
+        } else if (fois % 4 == 1) {
+            orientation = "est";
+        } else if (fois % 4 == 2) {
+            orientation = "sud";
+        }else if (fois % 4 == 3) {
+            orientation = "ouest";
         }
         return orientation;
     }

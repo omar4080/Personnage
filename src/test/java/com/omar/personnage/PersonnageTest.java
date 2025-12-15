@@ -20,4 +20,11 @@ public class PersonnageTest {
         String place = p.tourner(3);
         assertEquals("ouest",place,"doit retourner ouest");
     }
+    @Test
+    public void doit_retourner_ouest_lorsquoi_fois_est_4(){
+        Personnage p= new Personnage();
+        String place = p.tourner(4);
+        assertEquals("nord",place,"doit retourner nord");
+    }
+
 }
